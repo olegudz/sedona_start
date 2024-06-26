@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h2 class="visually-hidden">Шапка сайта</h2>
+
+            <img class="logotype" src="./img/Логотип.svg" alt="Логотип" width="138" height="70">
+
+            <nav class="header-nav">
+
+                <ul class="menu-left">
+                    <li><a href="index.html">ИНФОРМАЦИЯ</a></li>
+                    <li><a href="#">ФОТО И ВИДЕО</a></li>
+
+                </ul>
+
+                <ul class="menu-right">
+                    <li><a href="#">КАРТА ШТАТА</a></li>
+                    <li><a href="hotel.html">ГОСТИНИЦЫ</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <h1 class="visually-hidden">SEDONA</h1>
+
+            <section class="promo">
+                <h2 class="visually-hidden">Седона</h2>
+                <img class="promo-welcome" width="188" height="45" src="./img/Welcome.svg" alt="Welcome">
+                <img class="promo-gorgeous" width="176" height="30" src="./img/to the gorgeous.svg" width="176"
+                    height="30" alt="to the gorgeous">
+                <img class="promo-sedona" width="458" height="78" src="./img/Sedona.svg" alt="Sedona">
+                <img src="./img/Because the Grand  Canyon sucks!.svg" alt="Because the Grand Canyon sucks">
+            </section>
+
+            <section class="promo-text">
+                <h3>СЕДОНА - небольшой городок в АРИЗОНЕ,<br>
+                    зАСЛУЖИвающий большего!</h3>
+                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </section>
+
+            <section class="advantage1-photo">
+                <div>
+                    <h2>НАСТОЯЩИЙ<br> ГОРОДОК</h2>
+                    <p class="divided">— №1 —</p>
+                    <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ,<br> ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+                </div>
+                <img src="./img/Layer 10.jpg" width="800" height="256" alt="НАСТОЯЩИЙ ГОРОДОК">
+            </section>
+
+            <section class="advantage2-block">
+                <ul>
+                    <li class="house">
+                        <div>
+                            <h2>Жилье</h2>
+                            <p>Рекомендуем пожить в настоящем<br> мотеле, все как в кино!</p>
+                        </div>
+                    </li>
+                    <li class="food">
+                        <div>
+                            <h2>ЕДА</h2>
+                            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,<br>
+                                Вы НЕ разочаруетесь!
+                            </p>
+                        </div>
+                    </li>
+                    <li class="souvenirs">
+                        <div>
+                            <h2>СУВЕНИРЫ</h2>
+                            <p>Не только китайского, но и местного производства!</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="advantage3-photo">
+                <img src="./img/Layer 5.jpg" alt="Мост дьявола">
+                <div>
+                    <h2>ТАМ ЕСТЬ<br>
+                        Мост дьявола</h2>
+                    <p class="divided">— №2 —</p>
+                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                </div>
+            </section>
+
+            <section class="advantage4-block">
+                <ul>
+                    <li>
+                        <div>
+                            <h2>НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h2>
+                            <p>— №3 —</p>
+                            <p>ВСЕ достопримечательности<br>
+                                находятся очень близко</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h2>КРАСИВАЯ<br> ДОРОГА</h2>
+                            <p>— №4 —</p>
+                            <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем<br>
+                                НЕ СКУЧНО!</p>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h2>МАЛО<br> ТУРИСТОВ</h2>
+                            <p>— №5 —</p>
+                            <p>Большинство едет в гранд каньон и<br> толпится там</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="order-form">
+                <p class="order-form-big-sign">ЗАИНТЕРЕСОВАЛИСЬ?</p>
+                <p class="order-form-light-sign">Укажите предполагаемые даты поездки,<br>
+                    и мы покажем вам лучшие предложения гостиниц в седоне
+                </p>
+
+                <a href="#" id="btn-show-hotel" class="btn btn-big-hotel">
+                    ПОИСК ГОСТИНИЦЫ В седоне
+                </a>
+            </section>
+            <section class="hotel-search">
+                <form class="hotel-search-form" action="hotel.php" method="post">
+                    <div class="form-item">
+                        <label for="form-item-in">Дата заезда:</label>
+                        <input type="date" id="form-item-in"  value="2017-05-24">
+
+                    </div>
+
+                    <div class="form-item">
+                        <label for="form-item-out">Дата выезда:</label>
+                        <input type="date" id="form-item-out" value="2017-06-04">
+                    </div>
+
+                    <div class="form-item-age">
+                        <label>
+                            <span>Взрослые:</span>
+                            <div class="counter" id="count_adult">
+                                <button class="pre" type="button">-</button>
+                                <input type="text" name="count_adult" value="2" size="1">
+                                <button class="next" type="button">+</button>
+                            </div>
+                        </label>
+
+                        <label for="count_kids">
+                            <span>Дети:</span>
+                            <div class="counter" id="count_kid">
+                                <button class="pre" type="button">-</button>
+                                <input type="text" name="count_kid" value="0" size="1">
+                                <button class="next" type="button">+</button>
+                            </div>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-send-form">
+                        НАЙТИ
+                    </button>
+
+                </form>
+
+            </section>
+
+
+            <section class="map">
+                <h2 class="visually-hidden">Дорога к Седоне</h2>
+                <img src="./img/map.png" width="1200" height="593" alt="Дорога к Седоне">
+            </section>
+        </main>
+
+        <footer class="footer">
+            <h2 class="visually-hidden">Подвал сайта</h2>
+
+            <p class="footer-big-sign">#visitSEDONA</p>
+
+
+            <ul class="footer-social">
+                <li>
+                    <a href="#" class="twiter"></a>
+                </li>
+                <li>
+                    <a href="#" class="facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="youtube"></a>
+                </li>
+            </ul>
+
+            <div class="htmlacademy-sign">
+                <p>WEBSITE by
+                    <a href="#"><img src="./img/logo-htmlacademy.svg" class="htmlacademy-sign-img" width="115"
+                            height="41" alt="HTMLacademy"></a>
+                </p>
+            </div>
+
+        </footer>
+
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
